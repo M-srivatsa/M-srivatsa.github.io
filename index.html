@@ -8,48 +8,69 @@
 
     <!-- stylesheet file links -->
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face|Gloria+Hallelujah|Orbitron|Permanent+Marker" rel="stylesheet">
 
     <!-- favicon link -->
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+
+    <!-- Javascript links-->
+    <script src="assets/scripts/jquery-3.3.1.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/main.js"></script>
 </head>
+
 <body>
-    <header>
+    <header class="container">
         <nav class="header">
-            <a href="#default" class="logo">SRIVATSA . M</a>
+            <a href="#default" class="logo" title="My Name">SRIVATSA . M</a>
             <div class="header-right">
-            <a href="#" class="active" rel="noopener noreferrer">HOME</a>
-            <a href="#" rel="noopener noreferrer">ABOUT ME</a>
-            <a href="#" rel="noopener noreferrer">EXPERIENCE</a>
-            <a href="#" rel="noopener noreferrer">MY WORK</a>
-            <a href="#" rel="noopener noreferrer">CONTACT ME</a>
+            <a href="#home" class="active" title="Home">HOME</a>
+            <a href="#about-me" title="About Me">ABOUT ME</a>
+            <a href="#experience" title="My Experience">EXPERIENCE</a>
+            <a href="#my-work" title="My work">MY WORK</a>
+            <a href="#contact" title="My Contact infoo">CONTACT INFO</a>
             </div>
         </nav>
     </header>
-    <section class="content">
-        <p>SSome text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-    </section>
-    <aside>THIS IS THE CONTENTS OF THE ASIDE TAG</aside>
 
-    <footer> <span id="footer_text" title="Just Kidding!">&copy; SRIVATSA</span></footer>
+    <div class="main-container">
+        <section class="data-container home" id="home">
+            <section class="home-img">
+                <img src="assets/images/home-icon.jpg" alt="my identity" title="Please Dont Sue Me(if you own it)">
+            </section>
+            <section>
+                <span><p id="job" title="My Job">Full Stack Developer</p><br><p id="company" title="Company i am working for">MountBlue Technologies</p></span>
+            </section>
+        </section>
+        <section class="data-container about-me" id="about-me">
+            <h2>About Me</h2>
+            <section id="contact-left">
+                    <p>Data About me will be put here</p>
+            </section>
+        </section>
+        <section class="data-container experience" id="experience">
+                <h2>My Work Expierence</h2>
+            <section id="contact-left">
+                    <p>My work Experience data will be put here</p>
+            </section>
+        </section>
+        <section class="data-container my-work" id="my-work">
+                <h2>My Work</h2>
+            <section id="contact-left">
+                <p>My work related data will be put here</p>
+            </section>
+        </section>
+        <section class="data-container contact-info" id="contact">
+                <h2>Contact Info</h2>
+            <section id="contact-left">
+                <a href="mailto:srivatsa.dev@gmail.com"><span class="contact-data"><img src="assets/images/email_icon.png" class="
+                    contact-icons">srivatsa.dev@gmail.com</span></a>
+            </section>
+        </section>
+    </div>
+
+    <footer class="container"> 
+        <span id="footer_text" title="Just Kidding!">&copy; SRIVATSA</span>
+    </footer>
 </body>
 </html>

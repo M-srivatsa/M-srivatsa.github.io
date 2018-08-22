@@ -45,12 +45,27 @@ table {
   border-spacing: 0;
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: auto;
+    padding-right: auto;
+    width: auto;
+  }
+  
 
 /* footer style section */
 footer{
     text-align: center;
     font-size: large;
-    background-color: rgb(12, 26, 70);
+    background-color: rgb(23, 39, 94);
     height: 50px;
     line-height: 50px;
     font-family: 'Orbitron', sans-serif;
@@ -59,11 +74,15 @@ footer{
     color: whitesmoke;
 }
 
+body, html {
+    height: 100%;
+    margin: 0;
+}
 
 /* header style section */
 .header {
     overflow: hidden;
-    background-color: rgb(12, 26, 70);
+    background-color: rgb(23, 39, 94);
     padding: 10px 10px;
   }
   
@@ -111,3 +130,91 @@ float: right;
 .content{
     margin-top: 10px;
 }
+
+.contact-info{
+    background-color: rgb(238, 209, 165);
+    padding: 5%;
+}
+
+.contact-icons{
+    width: 2em;
+    height: 2em;
+}
+
+.contact-left{
+    display: inline;
+}
+
+.contact-data{
+    line-height: 25px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('../images/home-bg.jpg');
+    /* Full height */
+    height: auto; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.data-container h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.experience{
+    background-color: burlywood;
+    padding: 5%;
+}
+
+.about-me{
+    background-color: rgba(127, 255, 212,.7);
+    padding: 5%;
+}
+
+.my-work{
+    padding: 5%;
+    background-color: darkgray;
+}
+
+.home{
+    padding: 7%;
+    color: aliceblue;
+    font-size: 2em;
+    background-color: rgba(173, 173, 173,.35);
+
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#job{
+    font-size: 2.1em;
+    flex: 2;
+    font-family: 'Freckle Face', cursive;
+}
+
+.home img{
+    border-radius: 6em;
+    width: 8rem;
+}
+
+@media(min-width:860px){
+    .home{
+        display: flex;
+        justify-content: space-between;
+    }
+}#company{
+
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.3em;
+}
+
+
+
