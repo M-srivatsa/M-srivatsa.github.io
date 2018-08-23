@@ -170,9 +170,10 @@ float: right;
 }
 
 .experience{
-    background-color: burlywood;
+    background-color: rgba(248, 193, 122,.75);
     padding: 5%;
 }
+
 
 .about-me{
     background-color: rgba(127, 255, 212,.7);
@@ -189,9 +190,6 @@ float: right;
     color: aliceblue;
     font-size: 2em;
     background-color: rgba(173, 173, 173,.35);
-
-    /* display: flex;
-    justify-content: space-between; */
 }
 
 #job{
@@ -202,19 +200,105 @@ float: right;
 
 .home img{
     border-radius: 6em;
-    width: 8rem;
+    width: 35%;
 }
 
-@media(min-width:860px){
+
+/* code that is messing with other code */
+/* @media screen and (min-width:860px){
     .home{
         display: flex;
         justify-content: space-between;
+    } */
+    
+
+@media screen and (min-width:1163px){
+    .experience{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-}#company{
+}
+
+#company{
 
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 1.3em;
 }
 
+.work-data{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+    flex: 3;
+    padding: 1em;
+    float: left;
+    height: 15em;
+    width: 100%;
+    background-color: rgba(240, 248, 255,.5);
+    margin: 10px 25px 10px 0px;
+}
 
+.experience-company{
+    margin-top: 2em;
+    display: block;
+    color: rgb(53, 33, 33);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
 
+.work-data strong{
+    font-size: 1.2em;
+}
+
+.about-me-text{
+    border-radius: 15px;
+    background-color: rgba(204, 206, 207, 0.555);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgb(78, 35, 4);
+    font-size: 1.3em;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.about-me-skills{
+    background-color: rgba(204, 206, 207, 0.555);
+    border-radius: 15px;
+}
+
+.about-me-images img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+/* .about-me-images{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+
+.about-me-subtitle{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3em;
+}
+
+@media screen and (min-width:768px){
+    .about-me-images{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* grid-template-columns: repeat(3,1fr); */
+        /* grid-gap: 2em; */
+    
+    }
+}

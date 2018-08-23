@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- all the meta information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
     <title>Portfolio</title>
 
     <!-- stylesheet file links -->
     <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Freckle+Face|Gloria+Hallelujah|Orbitron|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face|Gloria+Hallelujah|Orbitron|Permanent+Marker|Roboto" rel="stylesheet">
 
     <!-- favicon link -->
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
@@ -20,20 +24,24 @@
 </head>
 
 <body>
+    <!-- section containing all the NAV bar information -->
     <header class="container">
         <nav class="header">
-            <a href="#default" class="logo" title="My Name">SRIVATSA . M</a>
+            <a href="#" class="logo" title="My Name">SRIVATSA . M</a>
             <div class="header-right">
-            <a href="#home" class="active" title="Home">HOME</a>
-            <a href="#about-me" title="About Me">ABOUT ME</a>
-            <a href="#experience" title="My Experience">EXPERIENCE</a>
-            <a href="#my-work" title="My work">MY WORK</a>
-            <a href="#contact" title="My Contact infoo">CONTACT INFO</a>
+                <a href="#home" class="active" title="Home">HOME</a>
+                <a href="#about-me" title="About Me">ABOUT ME</a>
+                <a href="#experience" title="My Experience">EXPERIENCE</a>
+                <a href="#my-work" title="My work">MY WORK</a>
+                <a href="#contact" title="My Contact infoo">CONTACT INFO</a>
             </div>
         </nav>
     </header>
 
+    <!-- division that acts as a container for the sections of the body -->
     <div class="main-container">
+
+        <!-- section for the home section containing the picture along with the wwork title & company -->
         <section class="data-container home" id="home">
             <section class="home-img">
                 <img src="assets/images/home-icon.jpg" alt="my identity" title="Please Dont Sue Me(if you own it)">
@@ -42,24 +50,72 @@
                 <span><p id="job" title="My Job">Full Stack Developer</p><br><p id="company" title="Company i am working for">MountBlue Technologies</p></span>
             </section>
         </section>
+
+
+        <!-- section for the about-me section containing the data about you(skills, aspirations, goals etc) -->
         <section class="data-container about-me" id="about-me">
-            <h2>About Me</h2>
-            <section id="contact-left">
-                    <p>Data About me will be put here</p>
-            </section>
+            <h2>About Me</h2><br><br>
+            <div class="about-me-container">
+                <div class="about-me-text">
+                    <p>
+                        A Geek/Tech Enthusiast with the passion to learn new technologies & skills to solve business problems, And build something cool along the way.</p>
+                    <br><p>
+                        Interested in Software Development, Cloud Computing, DevOps, IOT, & Datacenter Operations.
+                    </p>
+                </div>
+                <br><br>
+                <div class="about-me-skills">
+                    <br><h3 class="about-me-subtitle">SKILLS</h3><br><br>
+                    <div class="about-me-images">
+                        <img src="assets/images/python.png" alt="Python Logo" title="PYTHON">
+                        <img src="assets/images/js.png" alt="Javascript Logo" title="JAVASCRIPT">
+                        <img src="assets/images/php.png" alt="PHP Logo" title="PHP">
+                        <img src="assets/images/java.png" alt="Java Logo" title="JAVA">
+                        <img src="assets/images/appstore.png" alt="Appstore Logo" title="IOS">
+                        <img src="assets/images/android-flat.png" alt="Android Logo" title="Android">
+                    </div>
+                    <br><br>
+                </div>
+                
+            </div>
         </section>
+
+
+        <!-- section for the experience section that contains the details about my previous & current work experiences -->
         <section class="data-container experience" id="experience">
-                <h2>My Work Expierence</h2>
-            <section id="contact-left">
-                    <p>My work Experience data will be put here</p>
+            <!-- the below sections are made responsive using flexbox & media queries -->
+            <!-- each section contains different work experiences -->
+            <section>
+                <h2 style="margin-right: 10px;">Work Expierence</h2><br>
+            </section>
+            <section class="work-data">
+                <a href="#" title="MountBlue Technologies" class="experience-company"><h3>MountBlue Technologies</h3></a>
+                <br><p><strong>Software Engineer Trainee</strong></p><br>
+                <p>Aug 2018 - Present</p>
+            </section>
+            <section class="work-data">
+                <a href="#" title="Texas Instruments" class="experience-company"><h3>Texas Instruments</h3></a>
+                <br><p><strong>Project Trainee (Intern)</strong></p><br>
+                <p>Jan 2018 - Jun 2018</p>
+            </section>
+            <section class="work-data">
+                <a href="#" title="Styre Learning" class="experience-company"><h3>Styre Learning</h3></a>
+                <br><p><strong>Software Developer Intern</strong></p><br>
+                <p>Dec 2015 - May 2016</p>
             </section>
         </section>
+
+
+        <!-- section for the work showcase section which contains links to any public repo's of my projects -->
         <section class="data-container my-work" id="my-work">
                 <h2>My Work</h2>
-            <section id="contact-left">
-                <p>My work related data will be put here</p>
+            <section id="">
+                <p>You can view all my personal work here:</p>
             </section>
         </section>
+
+
+        <!-- section for the contact-info section which contains all the places you can reach me -->
         <section class="data-container contact-info" id="contact">
                 <h2>Contact Info</h2>
             <section id="contact-left">
@@ -69,6 +125,8 @@
         </section>
     </div>
 
+
+    <!-- section for the footer section which contains the copyright information -->
     <footer class="container"> 
         <span id="footer_text" title="Just Kidding!">&copy; SRIVATSA</span>
     </footer>
