@@ -199,7 +199,8 @@ float: right;
 
 .my-work{
     padding: 5%;
-    background-color: darkgray;
+    background-color: rgba(26, 70, 80, 0.903);
+    text-align: center;
 }
 
 .home{
@@ -218,6 +219,10 @@ float: right;
     border-radius: 5em;
     width: 32%;
     float: left;
+}
+
+.empty-space{
+    margin-top: 640px; 
 }
 
 .home-job{
@@ -310,6 +315,24 @@ float: right;
     font-size: 1.3em;
 }
 
+.github_link{
+    display: inline-block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 2em;
+    background-color: rgba(156, 156, 156, 0.548);
+    padding: 1em;
+    border-radius: 15px;
+    color:rgb(205, 211, 216);
+}
+
+.github_link img{
+    width: 75px;
+    height: 75px;
+}
+
 /* @media screen and (min-width:768px){
     .about-me-images{
         display: flex;
@@ -343,7 +366,10 @@ float: right;
 
 @media screen and (max-width:480px){
     .contact-right{
-
         grid-template-columns: 1fr 1fr;
     }
+    .contact-right a{
+        margin: 1em;
+    }
+    
 }
