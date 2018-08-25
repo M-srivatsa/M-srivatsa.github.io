@@ -205,7 +205,7 @@ float: right;
 }
 
 .home{
-    padding: 7%;
+    padding: 12%;
     color: aliceblue;
     font-size: 2em;
     background-color: rgba(49, 47, 47, 0.85);
@@ -218,7 +218,7 @@ float: right;
 
 .home img{
     border-radius: 5em;
-    width: 32%;
+    width: 35%;
     float: left;
 }
 
@@ -344,6 +344,33 @@ float: right;
 .github_link img{
     width: 75px;
     height: 75px;
+}
+
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#5ac56c;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
 }
 
 /* @media screen and (min-width:768px){
