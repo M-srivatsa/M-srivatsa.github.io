@@ -270,23 +270,35 @@ float: right;
     font-size: 1.2em;
 }
 
+.about-me-heading{
+    flex: 1;
+}
+
 .about-me-text{
     border-radius: 15px;
-    background-color: rgba(158, 159, 160, 0.685);
+    background-color: rgba(109, 110, 112, 0.582);
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    float: left;
+    flex: 1;
     hyphens: auto;
     color:rgb(205, 211, 216);
     font-size: 1.3em;
     padding: 25px;
     width: 100%;
-    text-align: center;
+    text-align: left;
+}
+
+
+.about-me-top-container{
+    display: flex;
+    align-items: center;
 }
 
 .about-me-skills{
-    background-color: rgba(158, 159, 160, 0.685);
+    background-color: rgba(152, 153, 153, 0.685);
     border-radius: 15px;
 }
 
@@ -372,4 +384,20 @@ float: right;
         margin: 1em;
     }
     
+}
+
+@media screen and (max-width:275px){
+    .contact-right{
+        grid-template-columns: 1fr;
+    }
+    .contact-right a{
+        margin: 1em;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .about-me-top-container{
+        flex-direction: column;
+    }
 }
