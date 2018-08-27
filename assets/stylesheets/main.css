@@ -271,8 +271,9 @@ float: right;
     font-size: 1.2em;
 }
 
-.about-me-heading{
+#about-me-heading{
     flex: 1;
+    font-size: 3.5em;
 }
 
 .about-me-text{
@@ -287,7 +288,8 @@ float: right;
     hyphens: auto;
     color:rgb(205, 211, 216);
     font-size: 1.3em;
-    padding: 25px;
+    padding: 50px;
+    line-height: 1.5;
     width: 100%;
     text-align: left;
 }
